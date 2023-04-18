@@ -248,22 +248,14 @@ body {
 .advantages-icon-container {
   display: flex;
   justify-content: center;
+  align-items: center;;
   background-color: var(--color-rest);
   margin-bottom: 8px;
   border-radius: 4px;
 }
 /* ===========================SECTION 3========================== */
 
-/* .title-section-three {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(color-title-bg-icon);
-  margin-bottom: 72px;
-} */
+
 .work-list {
   display: flex;
   gap: 24px;
@@ -324,8 +316,8 @@ body {
 }
 .social-list-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -353,34 +345,33 @@ body {
 
 /* =======================SECTION 5 =======================*/
 
-.customer-list{
+.customer-list {
   display: flex;
   gap: 24px;
 }
-.customer-list-item{
+.customer-list-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
-.customer-list-link{
+.customer-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  color:var(--customer-icon-color);
+  color: var(--customer-icon-color);
   width: 100%;
   height: 100%;
   border: 1px solid var(--customer-icon-color);
   border-radius: 4px;
 }
-.customer-list-icon{
+.customer-list-icon {
   fill: currentColor;
 }
 
 .customer-list-link:hover,
-.customer-list-link:focus{
-  border-color:var(--color-hover-focus-socialbg);
+.customer-list-link:focus {
+  border-color: var(--color-hover-focus-socialbg);
   color: var(--color-hover-focus-socialbg);
 }
-
 
 /* ===========================FOOTER========================== */
 .footer {
@@ -422,24 +413,26 @@ body {
 }
 .footer-logo {
   flex-direction: column;
+ 
+
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
   gap: 120px;
 }
 
-.footer-contaner{
-  display: flex;
-  align-items: baseline;
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--backgraund-color);
+  margin-bottom: 16px;
 }
 
-.social-text{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color:var(--backgraund-color);
-margin-bottom: 16px;
-}
-
- .footer-social-list-link {
+.footer-social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -460,8 +453,6 @@ margin-bottom: 16px;
 .footer-social-list-item-icon {
   fill: var(--color-rest);
 }
-
-
 
 /* ===========================PORTFOLIO========================== */
 /* BUttons */
@@ -486,7 +477,8 @@ margin-bottom: 16px;
   background-color: var(--color-hover-focus-socialbg);
   border: 1px solid transparent;
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-container {
   display: flex;
@@ -530,15 +522,18 @@ margin-bottom: 16px;
 
 .filter-card {
   width: calc((100% - 48px) / 3);
-  display:block;
+  
 }
 .title-style {
   padding: 32px 16px;
   border: 1px solid var(--border-batton-portfolio);
   border-top: none;
 }
-
-.filter-card:hover,
-.filter-card:focus{
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.filter-link{
+  display: block;
+}
+.filter-link:hover,
+.filter-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
