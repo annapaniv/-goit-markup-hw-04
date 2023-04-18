@@ -2,8 +2,8 @@
   --font-primary: Roboto, sans-serif;
   --body-text: #434455;
   --backgraund-color: #ffffff;
-  --color-title-h2-h3-darkbg: #2e2f42;
-  --color-hover-focus: #404bbf;
+  --color-title-bg-icon: #2e2f42;
+  --color-hover-focus-socialbg: #404bbf;
   --color-partlogo-buttons: #4d5ae5;
   --color-rest: #f4f4fd;
   --border-batton-portfolio: #e7e9fc;
@@ -44,8 +44,6 @@ body {
   font-family: var(--font-primary);
 }
 .section {
-  /* padding-left: 15px;
-  padding-right: 15px; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -67,7 +65,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(--color-title-bg-icon);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -78,7 +76,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(--color-title-bg-icon);
 }
 
 /* contacts */
@@ -145,19 +143,25 @@ body {
 /* ==============================TITLE================================ */
 
 /* Title H1 */
-/* .title-container{
-  padding-top: 188px; 
-  padding-bottom: 188px;
-} */
+
 .section-title {
   font-family: var(--font-primary);
-  background-color: var(--color-title-h2-h3-darkbg);
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/title/img-name.jpg);
+  background-size: cover;
+  background-color: var(--color-title-bg-icon);
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .title-section-one {
   font-weight: 700;
   font-size: 56px;
@@ -203,7 +207,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(--color-title-bg-icon);
   margin-bottom: 8px;
 }
 .text-section-two {
@@ -223,28 +227,39 @@ body {
 }
 .title-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.advantages-icon {
+  margin: 24px auto;
+  fill: var(--color-title-bg-icon);
+}
+.advantages-icon-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-rest);
+  margin-bottom: 8px;
+  border-radius: 4px;
 }
 /* ===========================SECTION 3========================== */
 
-.title-section-three {
+/* .title-section-three {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(color-title-bg-icon);
   margin-bottom: 72px;
-}
+} */
 .work-list {
   display: flex;
   gap: 24px;
@@ -253,19 +268,19 @@ body {
 .work-item {
   width: calc((100% - 48px) / 3);
 }
-.work-section{
+.work-section {
   padding-bottom: 120px;
 }
 /* ===========================SECTION 4========================== */
 
-.title-section-four {
+.title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(color-title-bg-icon);
   margin-bottom: 72px;
   padding-left: 15px;
   padding-right: 15px;
@@ -279,7 +294,7 @@ body {
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(--color-title-bg-icon);
   margin-bottom: 8px;
 }
 .team-role {
@@ -288,16 +303,31 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-text);
   text-align: center;
+  margin-bottom: 8px;
 }
 .employees-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .list-ones {
   width: calc((100% - 72px) / 4);
   background-color: var(--backgraund-color);
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-partlogo-buttons);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--color-hover-focus-socialbg);
 }
 
 .employees-name {
@@ -307,10 +337,22 @@ body {
   padding-right: 16px;
   border-radius: 0px 0px 4px 4px;
 }
+.social-list {
+  display: flex;
+  gap: 24px;
+}
+.social-list-item-icon {
+  fill: var(--color-rest);
+}
+
+/* =======================SECTION 5 =======================*/
+
+
+
 
 /* ===========================FOOTER========================== */
 .footer {
-  background-color: var(--color-title-h2-h3-darkbg);
+  background-color: var(--color-title-bg-icon);
   width: 1400px;
   height: 312px;
   margin-left: auto;
@@ -401,7 +443,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-title-h2-h3-darkbg);
+  color: var(--color-title-bg-icon);
   margin-bottom: 8px;
 }
 .content-item-text {
@@ -422,6 +464,6 @@ body {
 }
 .title-style {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-batton-portfolio);
   border-top: none;
 }
