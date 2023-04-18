@@ -276,7 +276,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(color-title-bg-icon);
+  color: var(--color-title-bg-icon);
   margin-bottom: 72px;
   padding-left: 15px;
   padding-right: 15px;
@@ -358,7 +358,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-title-bg-icon);
+  color: var(--customer-icon-color);
   width: 100%;
   height: 100%;
   border: 1px solid var(--customer-icon-color);
