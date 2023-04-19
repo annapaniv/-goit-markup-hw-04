@@ -99,7 +99,7 @@ body {
 .menu-link:focus,
 .menu:focus,
 .contacts:focus {
-  color: var(--color-hover-focus);
+  color: var(--color-hover-focus-socialbg);
 }
 
 .container {
@@ -202,7 +202,7 @@ body {
 }
 .modal-button:hover,
 .modal-button:focus {
-  background: var(--color-hover-focus);
+  background: var(--color-hover-focus-socialbg);
 }
 
 /* ===========================SECTION 2========================== */
@@ -242,7 +242,6 @@ body {
   margin: -1px;
 }
 .advantages-icon {
-  margin: 24px auto;
   fill: var(--color-title-bg-icon);
 }
 .advantages-icon-container {
@@ -252,6 +251,7 @@ body {
   background-color: var(--color-rest);
   margin-bottom: 8px;
   border-radius: 4px;
+  height: 112px;
 }
 /* ===========================SECTION 3========================== */
 
@@ -278,8 +278,7 @@ body {
   text-transform: capitalize;
   color: var(--color-title-bg-icon);
   margin-bottom: 72px;
-  padding-left: 15px;
-  padding-right: 15px;
+  
 }
 .list-item {
   background-color: var(--backgraund-color);
@@ -331,7 +330,7 @@ body {
 .employees-name {
   padding-top: 32px;
   padding-bottom: 32px;
-
+    
   border-radius: 0px 0px 4px 4px;
 }
 .social-list {
