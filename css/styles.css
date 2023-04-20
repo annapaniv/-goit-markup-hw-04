@@ -375,10 +375,6 @@ body {
 /* ===========================FOOTER========================== */
 .footer {
   background-color: var(--color-title-bg-icon);
-  width: 1400px;
-  height: 312px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
